@@ -6,6 +6,8 @@ public class calcTwinsTix {
 	public static void main(String args[]) {
 		int nTix = 0;
 		double salesTax = .07;
+		int price = 75;
+		int fee = 20;
 		//Get user input
 		Scanner input = new Scanner(System.in);
 		//try catch statement prevents wrong inputs
@@ -18,7 +20,7 @@ public class calcTwinsTix {
 			main(args);
 		}
 		//calculates total charge
-		double tCharge = (nTix *75)+20;
+		double tCharge = (nTix *price)+fee;
 		double tax = tCharge * salesTax;
 		tCharge = tCharge + tax;
 		//Outputs the total charge
